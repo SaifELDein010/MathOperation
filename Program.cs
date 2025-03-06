@@ -5,9 +5,10 @@ namespace MathOperation
     {
         static void Main()
         {
-
-            DesignOfMenu.ShowMenuScreen();
-
+            while (true)
+            {
+                DesignOfMenu.ShowMenuScreen();
+            }
         }
     }
 }
