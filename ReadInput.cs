@@ -77,6 +77,20 @@ namespace CalculatorProject.utility
 
         }
 
+        static public bool IsDoubleNumber(string digit)
+        {
+
+            dynamic number = 0;
+            if (!(double.TryParse(digit, out double num2)))
+            {
+                return false;
+            }
+
+            return true;
+
+
+        }
+
         static public dynamic ReadNumberBetweenRange(string message, dynamic from, dynamic to)
         {
 

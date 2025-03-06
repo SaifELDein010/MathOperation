@@ -6,30 +6,30 @@ namespace MathOperation
 {
     class DesignOfMenu
     {
-        private int numberOfChooise = 0;
-        private void HeaderScreen()
+        static private int numberOfChooise = 0;
+        static private void HeaderScreen()
         {
 
-            Console.WriteLine("\t\t\t\t < - - Welcome to math operation - - >");
+            Console.WriteLine("\t\t\t\t < - - Welcome to math operation - - >\n\n");
 
         }
 
-        private void OptionsScreen()
+        static private void OptionsScreen()
         {
 
-            Console.WriteLine("\t [1] Addition       (+)");
-            Console.WriteLine("\t [2] Subtraction    (-)");
-            Console.WriteLine("\t [3] Multiplication (*)");
-            Console.WriteLine("\t [4] Division       (/)");
-            Console.WriteLine("\t [5] Show previous result.");
+            Console.WriteLine("\t\t\t\t\t [1] Addition              (+)");
+            Console.WriteLine("\t\t\t\t\t [2] Subtraction           (-)");
+            Console.WriteLine("\t\t\t\t\t [3] Multiplication        (*)");
+            Console.WriteLine("\t\t\t\t\t [4] Division              (/)");
+            Console.WriteLine("\t\t\t\t\t [5] Show previous result.");
 
-            Console.WriteLine("\t------------------------------");
+            Console.WriteLine("\t\t\t\t\t ------------------------------");
 
-            numberOfChooise = ReadInput.ReadNumberBetweenRange("\tEnter your chooises: ", 1, 5);
+            numberOfChooise = ReadInput.ReadNumberBetweenRange("\t\t\t\t\t  Enter your chooises: ", 1, 5);
 
         }
 
-        private void PerformOption()
+        static private void PerformOption()
         {
 
             switch(numberOfChooise)
@@ -56,7 +56,7 @@ namespace MathOperation
 
 
 
-        public void ShowMenuScreen()
+        static public void ShowMenuScreen()
         {
 
             HeaderScreen();
